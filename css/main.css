@@ -54,3 +54,43 @@ a.nav-link {
 a.nav-link:hover {
   color: #e67e22;
 }
+/*future css alani*/
+#future {
+  padding: 120px 0px;
+}
+.future-top h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+.future-top p {
+  font-family: "Droid Serif", serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #777;
+  margin-bottom: 70px;
+}
+.item-circle {
+  border: 3px solid #e67e22;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  border-radius: 200px;
+}
+.future-top i {
+  color: #e67e22;
+  line-height: 100px;
+}
+.future-content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #222;
+  margin-top: 24px;
+}
+.future-content p {
+  font-family: "Droid Serif", serif;
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 70px;
+}
