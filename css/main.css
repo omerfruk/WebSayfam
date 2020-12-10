@@ -58,11 +58,13 @@ a.nav-link:hover {
 #future {
   padding: 120px 0px;
 }
+.portfolio-top h3,
 .future-top h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 700;
 }
+.portfolio-top p,
 .future-top p {
   font-family: "Droid Serif", serif;
   font-size: 16px;
@@ -91,6 +93,29 @@ a.nav-link:hover {
 .future-content p {
   font-family: "Droid Serif", serif;
   font-size: 14px;
+  color: #777;
+  margin-bottom: 70px;
+}
+#portfolio {
+  background-color: #f7f7f7;
+  padding-top: 120px;
+  padding-bottom: 70px;
+}
+.card {
+  border-style: none;
+}
+.portfolio-content .row {
+  margin-bottom: 50px;
+}
+.portfolio-content .card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+.portfolio-content .card-subtitle {
+  font-family: "Droid Serif", serif;
+  font-size: 14px;
+  font-style: italic;
   color: #777;
   margin-bottom: 70px;
 }
