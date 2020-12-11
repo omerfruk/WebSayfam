@@ -58,12 +58,14 @@ a.nav-link:hover {
 #future {
   padding: 120px 0px;
 }
+.aboutUS-top h3,
 .portfolio-top h3,
 .future-top h3 {
   font-family: "Montserrat", sans-serif;
   font-size: 40px;
   font-weight: 700;
 }
+.aboutUS-top p,
 .portfolio-top p,
 .future-top p {
   font-family: "Droid Serif", serif;
@@ -83,6 +85,7 @@ a.nav-link:hover {
   color: #e67e22;
   line-height: 100px;
 }
+.aboutUS-content h4,
 .future-content h4 {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -90,12 +93,14 @@ a.nav-link:hover {
   color: #222;
   margin-top: 24px;
 }
+.aboutUS-content p,
 .future-content p {
   font-family: "Droid Serif", serif;
   font-size: 14px;
   color: #777;
   margin-bottom: 70px;
 }
+/*portfolio bolumu*/
 #portfolio {
   background-color: #f7f7f7;
   padding-top: 120px;
@@ -118,4 +123,52 @@ a.nav-link:hover {
   font-style: italic;
   color: #777;
   margin-bottom: 70px;
+}
+/*aboutUS bolumu*/
+#aboutUS {
+  padding: 120px 0;
+}
+.aboutUS-content .row {
+  margin-bottom: 90px;
+}
+.aboutUS-content {
+  position: relative;
+}
+.aboutUS-content::before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 4px;
+  background-color: #f1f1f1;
+  left: 50%;
+  margin-left: -2px;
+}
+.about-circle {
+  position: relative;
+  text-align: center;
+  margin-top: 30px;
+}
+.about-circle::before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  width: 176px;
+  height: 176px;
+  background-color: #e67e22;
+  border-radius: 170px;
+  border: 7px solid #f1f1f1;
+  left: 50%;
+  margin-left: -91.5px;
+  margin-top: 45px;
+}
+.about-circle .yellow-text {
+  position: relative;
+  z-index: 1;
+  padding-top: 35px;
+  font-family: "Droid Serif", serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
 }
