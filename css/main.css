@@ -2,7 +2,17 @@ html,
 body,
 #cover {
   height: 100%;
+  scroll-behavior: smooth;
 }
+a,
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:link {
+  color: #fff;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -129,6 +139,10 @@ h2 {
   margin: 0 auto;
   border-radius: 200px;
 }
+.item-circle i {
+  padding-top: 17px;
+  align-items: center;
+}
 .future-top i {
   color: #e67e22;
   line-height: 100px;
@@ -240,10 +254,21 @@ textarea {
   padding-right: 9px;
   color: #fff;
 }
+.social-icon a,
 .social-icon .fab {
   width: 40px;
   height: 40px;
   border-radius: 40px;
   background-color: #000;
   line-height: 40px;
+}
+/*responsive*/
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
 }
