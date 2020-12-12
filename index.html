@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,400i">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
   </head>
@@ -39,7 +40,7 @@
 </section>
 <section id="future">
   <div class="container">
-    <div class="future-top text-center">
+    <div class="future-top text-center wow fadeIn" data-wow-duration="3s">
       <h3>
         future
       </h3>
@@ -78,7 +79,7 @@
 </section>
 <section id="portfolio">
   <div class="container">
-    <div class="portfolio-top text-center">
+    <div class="portfolio-top text-center wow fadeIn" data-wow-duration="3s">
       <h3>
         portfolio
       </h3>
@@ -87,9 +88,9 @@
       </p>
     </div>
     <div class="portfolio-content text-center">
-      <div class="row">
+      <div class="row" >
         <div class="col-sm-4">
-          <div class="card">
+          <div class="card wow fadeInLeft" data-wow-duration="2s">
             <img src="img/portfolio.jpg" alt="portfolio1">
             <div class="card-block">
               <h4 class="card-title">
@@ -100,22 +101,22 @@
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="card">
+          <div class="card wow fadeIn" data-wow-duration="2s">
             <img src="img/portfolio1.jpg" alt="portfolio1">
             <div class="card-block">
               <h4 class="card-title">
-                portfolio1
+                portfolio2
               </h4>
               <p class="card-subtitle text-muted">biseyler biseyler</p>
             </div>
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="card">
+          <div class="card wow fadeInRight" data-wow-duration="2s">
             <img src="img/portfolio2.jpg" alt="portfolio1">
             <div class="card-block">
               <h4 class="card-title">
-                portfolio1
+                portfolio3
               </h4>
               <p class="card-subtitle text-muted">biseyler biseyler</p>
             </div>
@@ -124,33 +125,33 @@
       </div>
       <div class="row">
         <div class="col-sm-4">
-          <div class="card">
+          <div class="card wow fadeInLeft" data-wow-duration="2s">
             <img src="img/portfolio.jpg" alt="portfolio1">
             <div class="card-block">
               <h4 class="card-title">
-                portfolio1
+                portfolio4
               </h4>
               <p class="card-subtitle text-muted">biseyler biseyler</p>
             </div>
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="card">
+          <div class="card wow fadeIn" data-wow-duration="2s">
             <img src="img/portfolio1.jpg" alt="portfolio1">
             <div class="card-block">
               <h4 class="card-title">
-                portfolio1
+                portfolio5
               </h4>
               <p class="card-subtitle text-muted">biseyler biseyler</p>
             </div>
           </div>
         </div>
         <div class="col-sm-4">
-          <div class="card">
+          <div class="card wow fadeInRight" data-wow-duration="2s">
             <img src="img/portfolio2.jpg" alt="portfolio1">
             <div class="card-block">
               <h4 class="card-title">
-                portfolio1
+                portfolio6
               </h4>
               <p class="card-subtitle text-muted">biseyler biseyler</p>
             </div>
@@ -162,7 +163,7 @@
 </section>
 <section id="contact">
   <div class="container">
-    <div class="contact-top text-center">
+    <div class="contact-top text-center  wow fadeIn" data-wow-duration="3s">
       <h3>contact me</h3>
       <p>benle iletişim</p>    
     </div>
@@ -222,7 +223,10 @@
   </div>
 </section>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
-   
+    <script src="js/wow.js"></script>
+    <script>
+    new WOW().init();
+    </script>
     <script src="https://kit.fontawesome.com/7a0094710f.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -233,6 +237,5 @@
         header.classList.toggle("sticky",window.scrollY > 0);
       })
     </script>
-    <script src="/js/main.js"></script>
   </body>
 </html>
