@@ -90,12 +90,14 @@ h1 {
   font-family: "Droid Serif", serif;
   color: #000;
   font-size: 40px;
+  text-transform: uppercase;
   font-style: italic;
   margin-bottom: 30px;
 }
 h2 {
   font-family: "Montserrat", sans-serif;
   color: #000;
+  text-transform: uppercase;
   font-size: 75px;
   font-weight: 700;
   margin-bottom: 30px;
@@ -234,7 +236,7 @@ textarea {
   font-weight: 700;
 }
 #footer {
-  padding: 20px 0;
+  padding: 5px 0;
 }
 #footer p {
   font-family: "Montserrat", sans-serif;
@@ -262,6 +264,32 @@ textarea {
   background-color: #000;
   line-height: 40px;
 }
+.box {
+  width: 150px;
+  padding: 5px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+}
+.box img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.box img:hover {
+  transform: scale(0.9);
+}
+.box h1 {
+  font-size: 13px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+.box h5 {
+  font-size: 13px;
+}
+
 /*responsive*/
 
 @media (min-width: 576px) {
