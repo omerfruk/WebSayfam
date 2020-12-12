@@ -3,19 +3,80 @@ body,
 #cover {
   height: 100%;
 }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.6s;
+  padding: 40px 100px;
+  z-index: 100000;
+}
+header.sticky {
+  padding: 5px 100px;
+  background: #fff;
+}
+header.sticky .logo,
+header.sticky ul li a {
+  color: #000;
+}
+
+header .logo {
+  position: relative;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+header .logo:hover {
+  color: #e67e22;
+}
+header ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  position: relative;
+  list-style: none;
+}
+header ul li a {
+  position: relative;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #2c3e50;
+  font-weight: bold;
+  transition: color 0.6s ease;
+  -webkit-transition: color 0.6s ease;
+  -moz-transition: color 0.6s ease;
+  -o-transition: color 0.6s ease;
+  margin: 0 15px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 500px;
+}
+header ul li a:hover {
+  color: #e67e22;
+}
+
 #cover {
+  position: relative;
   background: url("../img/bgCover.jpg") no-repeat center center fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
 }
-.fixed-top {
-  max-width: 1140px;
-  margin: 20px auto;
-}
 h1 {
-  margin-top: 19%;
+  margin-top: 13%;
   font-family: "Droid Serif", serif;
   color: #000;
   font-size: 40px;
@@ -41,19 +102,6 @@ h2 {
   background-color: #000;
   color: #e67e22;
 }
-a.nav-link {
-  font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  color: #2c3e50;
-  font-weight: bold;
-  transition: color 0.5s ease;
-  -webkit-transition: color 0.5s ease;
-  -moz-transition: color 0.5s ease;
-  -o-transition: color 0.5s ease;
-}
-a.nav-link:hover {
-  color: #e67e22;
-}
 /*future css alani*/
 #future {
   padding: 120px 0px;
@@ -65,6 +113,7 @@ a.nav-link:hover {
   font-size: 40px;
   font-weight: 700;
 }
+
 .portfolio-top p,
 .future-top p {
   font-family: "Droid Serif", serif;
@@ -122,4 +171,79 @@ a.nav-link:hover {
   font-style: italic;
   color: #777;
   margin-bottom: 70px;
+}
+/*contact bolumu*/
+#contact {
+  background: url("../img/contact.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  padding: 120px 0;
+}
+.contact-top p {
+  font-family: "Droid Serif", serif;
+  font-size: 16px;
+  font-style: italic;
+  color: #000;
+  margin-bottom: 70px;
+}
+.contact-top h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+}
+#name,
+#email,
+#subject {
+  width: 90%;
+  height: 50px;
+  margin-bottom: 26px;
+  border-style: none;
+  border-radius: 3px;
+  padding-left: 20px;
+  margin-left: 5%;
+}
+textarea {
+  width: 90%;
+  height: 203px;
+  border-style: none;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-left: 5%;
+}
+.form-element {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+#footer {
+  padding: 20px 0;
+}
+#footer p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #555555;
+}
+.social-icons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.social-icon {
+  display: inline;
+  padding-left: 9x;
+  padding-right: 9px;
+  color: #fff;
+}
+.social-icon .fab {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background-color: #000;
+  line-height: 40px;
 }
