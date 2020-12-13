@@ -170,6 +170,13 @@ h2 {
   padding-top: 120px;
   padding-bottom: 70px;
 }
+#portfolio .card img {
+  max-height: 100%;
+  max-width: 100%;
+}
+#portfolio a {
+  font-size: 14px;
+}
 .card {
   border-style: none;
 }
