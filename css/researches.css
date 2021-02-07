@@ -10,6 +10,7 @@ a:active,
 a:link {
   color: #000;
 }
+
 header {
   position: fixed;
   top: 0;
@@ -17,24 +18,25 @@ header {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center !important;
   transition: 0.6s;
-  padding: 40px 100px;
+  padding: 40px 50px;
   z-index: 100000;
 }
 header.sticky {
-  text-align: center;
+  text-align: center !important;
   padding: 5px 100px;
   background: #fff;
 }
 header.sticky .logo {
   color: #000;
+  padding-left: 0%;
 }
 .accordion {
   margin-bottom: 100px;
 }
 header .logo {
-  /* position: relative; */
+  position: relative;
   font-weight: 700;
   color: #000;
   text-align: center !important;
@@ -104,4 +106,10 @@ h1 {
   text-align: center;
   margin: 100px 0 !important;
   font-family: "Montserrat", sans-serif;
+}
+@media (max-width: 768px) {
+  header a {
+    align-items: center !important;
+    padding-left: 30%;
+  }
 }
