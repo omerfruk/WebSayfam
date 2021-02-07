@@ -27,6 +27,7 @@ header {
 }
 header.sticky {
   padding: 5px 100px;
+  height: 60px;
   background: #fff;
 }
 header.sticky .logo,
@@ -77,54 +78,55 @@ header ul li a {
 header ul li a:hover {
   color: #e67e22;
 }
-
 .hamburger {
   display: none;
 }
-.hamburger div {
-  background-color: #000;
-  width: 2.5rem;
-  height: 0.5rem;
-  margin: 0.1rem 0;
-}
+
 @media (max-width: 768px) {
-  .hamburger {
-    display: block;
-    border: radius 0.5;
-  }
   .logo {
-    color: #000 !important;
     position: fixed !important;
-    left: 25px !important;
-    top: 5px !important ;
+    left: 20px;
+    top: 10px;
   }
-  .top-nav a {
-    color: ffff;
+  .hamburger {
+    position: fixed !important;
+    right: 15px !important;
+    top: 15px !important;
+    padding-top: 10px;
+    padding-right: 10px;
+    display: unset;
   }
-
-  .top-nav.active {
-    justify-content: center;
-    position: fixed;
+  .hamburger div {
+    width: 1.5rem;
+    height: 0.2rem;
+    margin: 0.2rem;
+    background-color: #fff;
+  }
+  .top-nav ul {
+    display: block;
+    transform: translateX(160%);
+  }
+  .top-nav ul li {
+    margin: 5rem;
+    display: flex;
     flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    background-color: rgb(255, 255, 255);
-    top: 0px;
-    right: 0px;
-    display: block;
+    height: 100%;
   }
-
-  .top-nav.active li {
-    display: block;
+  .show {
+    transform: translateX(-15%) !important;
   }
-
-  .top-nav.active a {
-    padding-left: 20vh;
-    justify-content: center;
-    flex-direction: column;
-    display: block;
-    box-sizing: border-box;
-    margin: 100px 0;
+  .uzunluk {
+    height: 100% !important;
+    background-color: #fff;
+  }
+  .uzunluk a {
+    color: #000 !important;
+  }
+  .siyah div {
+    background-color: #000 !important;
+  }
+  .sticky div div {
+    background-color: #000 !important;
   }
 }
 

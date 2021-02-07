@@ -17,17 +17,19 @@
   <body>
     <header >
       <a href="#" class="logo text-center">ÖmFar.</a>
-      <ul class="top-Bar">
-        <li class="top-Bar-li"><a href="#cover">home</a></li>
-        <li class="top-Bar-li"><a href="#future">future</a></li>
-        <li class="top-Bar-li"><a href="#portfolio">portfolio</a></li>
-        <li class="top-Bar-li"><a href="#contact">contact</a></li>
+      <nav class="top-nav"> 
+      <ul >
+        <li ><a class="kapan"  href="#cover">home</a></li>
+        <li ><a class="kapan1"  class="kapan1" href="#future">future</a></li>
+        <li ><a class="kapan2" class="kapan2" href="#portfolio">portfolio</a></li>
+        <li ><a class="kapan3"  class="kapan3" href="#contact">contact</a></li>
       </ul>
+    </nav>
       <div class="hamburger">
         <div></div>
         <div></div>
-        <div></div>
-        </div>
+        <div></div> 
+      </div>
     </header>
     <section id="cover">
     <div class="row text-center">
@@ -240,6 +242,7 @@
     <script>
     new WOW().init();
     </script>
+    <script src="js/topBar.js"></script>
     <script src="https://kit.fontawesome.com/7a0094710f.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -248,6 +251,7 @@
       window.addEventListener("scroll",function(){
         var header = document.querySelector("header");
         header.classList.toggle("sticky",window.scrollY > 0);
+        hamburger.classList.toggle("sticky",window.scrollY > 0);
       })
     </script>
   </body>
