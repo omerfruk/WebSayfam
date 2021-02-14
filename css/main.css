@@ -22,7 +22,7 @@ header {
   justify-content: space-between;
   align-items: center;
   transition: 0.6s;
-  padding: 40px 100px;
+  padding: 40px 50px;
   z-index: 100000;
 }
 header.sticky {
@@ -81,13 +81,23 @@ header ul li a:hover {
 .hamburger {
   display: none;
 }
+.hamburger div :hover {
+  color: #e67e22;
+}
 
 @media (max-width: 768px) {
+  header {
+    height: 60px;
+  }
   .logo {
     padding-top: 5px;
     position: fixed !important;
     left: 20px;
     top: 15px;
+  }
+  .top-nav {
+    width: 50%;
+    height: 50%;
   }
   .hamburger {
     position: fixed !important;
